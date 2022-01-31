@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rest-api-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rest-api
+  template:
+    metadata:
+      labels:
+        app: rest-api
+    spec:
+      containers:
+      - name: rest-api
+        image: abhilashdk2018/node-rest-api
+        env:
+          - name: MONGO_URI
+            value: 'mongodb://auth-mongo-srv:27017/rest-api'
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always

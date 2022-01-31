@@ -1,0 +1,9 @@
+commonLabels:
+    app: testAppNode
+resources:
+  - deployment.yml
+  - mongo_deployment.yml
+  - service.yml
+  - hpa.yml
+configMapGenerator:
+  - name: test-node-map
