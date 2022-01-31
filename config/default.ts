@@ -1,0 +1,49 @@
+export default {
+    port: 1337,
+    dbUri: "mongodb://0.0.0.0:27017/rest-api-typescript-nodejs",
+    saltWorkFactor: 10,
+    accessTokenTtl: "15m",
+    refreshTokenTtl: "1y",
+    accessTokenPrivateKey: `-----BEGIN RSA PRIVATE KEY-----
+    MIICXgIBAAKBgQDxG43+H37UIMkxfDoI1fAierXY/P0qXzwLOUvkwwy29JQqvwxa
+    hd8fbInSTjdz618F4dH10humgBlvAR9uYH4NIHMpqOAD3a/HGkWgA8wXTV5KABrt
+    CYYBYjZS60E/mb3kzLxu4Cjzq7N2qSaWq1BDWHFJ28sH0upxZURCzhm3WQIDAQAB
+    AoGBAKH4Oskua0shw0bFB0+MOMdQ2/yq53+hfnqjwQIqrc3yO98DfM8LA7redS+c
+    b9AlnC4dZ6jVvtF5WJyjinPhyorFI1+DDuLXoB2pJ+sbW5SMVkP2Mw1RHVb00hoA
+    eZH4EYuuqTl6sSHlsieW7o7JXDt+Eb1HumkmuLSjds10ZW+hAkEA+toZkiE485/2
+    H8W94Hq4hsHQDCOo4hxzUjAAH9lJw2rS0k8IOTcxBqaI2ZAxgErH5P+SVtAcYakm
+    Vcl6HQ9OdQJBAPYOQtZipxqn5jrWGlX7yhHrSacrovrYI6zRqQkXZnWU4gpO1n5R
+    qlKY2/ERY+yWn/0zM1SCnn6/AAan9Y0ZsNUCQQCCwYbMrfaSvxG7FAbaaP2geIwq
+    l7fjTLMr5wtZjpitfRQxPbLqqAMtFUeGKGw1FEXH7xPnnoj8uv/ZfbDiTuU1AkBD
+    jsLXLhsHfJYADY0Jkqp2pQ2B8r869GFHMAGjV2NwYUJ25hKKeE21g/bPh6DR8sFW
+    udocGAkAb9zH9xG6fhVJAkEA371QIhvBjXvCQcuUZWxY/vKb+w3hzmVgxEtItsD6
+    SJzJLiRaf9rU2cTc/+gg+b6yQKtBXyWxqG4JP4WYnGXfMA==
+    -----END RSA PRIVATE KEY-----`,
+    accessTokenPublicKey: `-----BEGIN PUBLIC KEY-----
+    MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDxG43+H37UIMkxfDoI1fAierXY
+    /P0qXzwLOUvkwwy29JQqvwxahd8fbInSTjdz618F4dH10humgBlvAR9uYH4NIHMp
+    qOAD3a/HGkWgA8wXTV5KABrtCYYBYjZS60E/mb3kzLxu4Cjzq7N2qSaWq1BDWHFJ
+    28sH0upxZURCzhm3WQIDAQAB
+    -----END PUBLIC KEY-----`,
+    refreshTokenPrivateKey: `-----BEGIN RSA PRIVATE KEY-----
+    MIICWwIBAAKBgQCp1TC0ozY2U2OdTHvH5z545R/9ZORPYyvFC2GT0L8Jq32MW1A1
+    wTT+PDDh1ylfBFZF6JDDxTXHvjaaLf5jO5w3HThPS7hEMRgKPyEQhjVRviVbhdue
+    6snpCCzlq0BOjgSgPE+Qt4uG/LUbKZ0fvc31OpPaNwiPdSiYyGPWLwNeZQIDAQAB
+    AoGADXBjVEf+CDp9DXt56A2ycdqft2t+bZHJauRFqm7AT0GUw8CODlLloKCetaBT
+    E8PCF/IZUoSOhunUZErzcGLNL6YrXa40i2OrwX1tvhzAVZ2rphT9iwfw51A45LBM
+    YvC3MXgaM8m6JMBBqcLBv1Zj6+oljdMhSgzlndPm0kLW+lkCQQDkWtK4NZytFzgM
+    kpx7VVT99hLfo+1+B7Twiy1zZDx3NQ8puTnZo5prvJSvyy9HIQKYfVChJ9vOriHd
+    zOrHGuSnAkEAvmSm2klpmluXyoklCUX0W9C3F/hPHizEYEjrM4+xerdejxlB12Sx
+    HNjVPVMR7OOHaXHclNXh2HNrSlKw4JcqEwJAbhP6ECKH7EiNFEJ4fFueJO5CGtyC
+    14YPiwUMW9ut6ikBrjND184t2lGFu1hO6hLXlXqTK5xzMSZv3OOzKVelcQJAYVqI
+    MuAM/p/NGwRLitVZYMV1ie0vT4emlnFSyxezscMnt9Y7Y48aPVzmlKfwZ4fkitds
+    6jH/fLVv7B4iUYUaPwJANYvi/SEKptOTb6ctQOUEq/5ACg0GtaYm23h/9qdtyQuE
+    //Bl0jqiISwFhTuK+mn/h6jm/mdKEAS23YkRV+BVCQ==
+    -----END RSA PRIVATE KEY-----`,
+    refreshTokenPublicKey: `-----BEGIN PUBLIC KEY-----
+    MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp1TC0ozY2U2OdTHvH5z545R/9
+    ZORPYyvFC2GT0L8Jq32MW1A1wTT+PDDh1ylfBFZF6JDDxTXHvjaaLf5jO5w3HThP
+    S7hEMRgKPyEQhjVRviVbhdue6snpCCzlq0BOjgSgPE+Qt4uG/LUbKZ0fvc31OpPa
+    NwiPdSiYyGPWLwNeZQIDAQAB
+    -----END PUBLIC KEY-----`,
+  };
